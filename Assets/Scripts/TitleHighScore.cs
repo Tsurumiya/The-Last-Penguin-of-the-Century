@@ -14,8 +14,8 @@ public class TitleHighScore : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        highScore = PlayerPrefs.GetInt(key1, 60);
-        //保存しておいたハイスコアをキーで呼び出し取得し保存されていなければ60になる
+        highScore = PlayerPrefs.GetInt(key1, 600);
+        //保存しておいたハイスコアをキーで呼び出し取得し保存されていなければ600になる
         highmillis = PlayerPrefs.GetInt(key2, 0);
 
         int minute = highScore / 60;//分.timeを60で割った値.

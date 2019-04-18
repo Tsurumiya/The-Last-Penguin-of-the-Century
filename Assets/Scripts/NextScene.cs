@@ -19,5 +19,9 @@ public class NextScene : MonoBehaviour {
             SceneManager.LoadScene(1);
         }
 
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftAlt) && Input.GetKey(KeyCode.C))
+        {
+            PlayerPrefs.DeleteAll();
+        }
     }
 }
